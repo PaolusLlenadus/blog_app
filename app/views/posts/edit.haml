@@ -1,0 +1,10 @@
+%h1 Edit Post
+
+= render 'form'
+
+= form_for @post do |f|
+	= f.label :title
+	= f.textfield :title
+	= f.label :body
+	= f.text_area :body
+	= f.submit
